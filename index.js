@@ -137,6 +137,7 @@ module.exports = function(source) {
 				filename: req,
 				doctype: query.doctype || "html",
 				pretty: query.pretty,
+				filters: query.filters,
 				self: query.self,
 				compileDebug: loaderContext.debug || false,
 				globals: ["require"].concat(query.globals || []),
